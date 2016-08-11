@@ -1,0 +1,74 @@
+{
+  "name": "reserve-performance",
+  "version": "0.0.1",
+  "description": "Package to do load-tests with help of AWS Lambda",
+  "main": "index.js",
+  "author": {
+    "name": "Jane Savina",
+    "email": "jane.savina@nordstrom.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://git.nordstrom.net/scm/dwper/reserve-performance.git"
+  },
+  "license": "proprietary",
+  "dependencies": {
+    "artillery-core": "^1.8.2",
+    "aws-sdk": "^2.3.16",
+    "bluebird": "^3.4.0",
+    "cfn": "^0.7.0",
+    "glob-promise": "^1.0.6",
+    "https-proxy-agent": "^1.0.0",
+    "js-yaml": "^3.6.1",
+    "lodash": "^4.13.1",
+    "moment": "^2.13.0",
+    "request-promise": "^3.0.0",
+    "require-dir": "^0.3.0",
+    "shelljs": "^0.7.0",
+    "winston": "^2.2.0",
+    "yargs": "^4.7.1"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "chai-as-promised": "^5.3.0",
+    "del": "^2.2.0",
+    "glob": "^7.0.3",
+    "gulp": "^3.9.1",
+    "gulp-apidoc": "^0.2.4",
+    "gulp-exit": "0.0.2",
+    "gulp-gunzip": "0.0.3",
+    "gulp-istanbul": "^0.10.4",
+    "gulp-mocha": "^2.2.0",
+    "gulp-nodemon": "^2.0.7",
+    "gulp-replace": "^0.5.4",
+    "gulp-shell": "^0.5.2",
+    "gulp-task-listing": "^1.0.1",
+    "gulp-untar": "0.0.4",
+    "gulp-util": "^3.0.7",
+    "gulp-zip": "^3.2.0",
+    "map-stream": "0.0.6",
+    "mocha-bamboo-reporter": "^1.1.1",
+    "request-progress": "^2.0.1",
+    "supertest": "^1.2.0",
+    "supertest-as-promised": "^3.1.0",
+    "vinyl-s3": "^0.3.0",
+    "vinyl-source-stream": "^1.1.0"
+  },
+  "files": [
+    "index.js",
+    "LICENSE",
+    "package.json",
+    "README.md",
+    "lib/formation/artilleryLambda.js",
+    "lib/formation/policies.js",
+    "lib/formation/role.js",
+    "lib/function/index.js",
+    "lib/function/package.json",
+    "lib/util/aws.js",
+    "lib/util/logger.js",
+    "lib/lambda_1470952502126.zip"
+  ],
+  "directories": {
+    "lib": "./lib"
+  }
+}
