@@ -135,8 +135,7 @@ function run(options) {
         return promise(options);
     })
         .then(function (results) {
-            results = _.flattenDeep(results);
-            return results.artillery;
+            return results[1].artillery;
         });
 }
 
