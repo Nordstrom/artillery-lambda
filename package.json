@@ -1,5 +1,5 @@
 {
-  "name": "artillery-lambda",
+  "name": "reserve-performance",
   "version": "0.0.2",
   "description": "Artillery load test running with AWS Lambda",
   "main": "index.js",
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Nordstrom/artillery-lambda.git"
+    "url": "git+https://github.com/Nordstrom/reserve-performance.git"
   },
   "license": "MIT",
   "dependencies": {
