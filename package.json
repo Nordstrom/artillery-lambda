@@ -66,7 +66,7 @@
     "lib/function/package.json",
     "lib/util/aws.js",
     "lib/util/logger.js",
-    "lib/lambda_1470952502126.zip"
+    "lib/lambda_1476895147822.zip"
   ],
   "directories": {
     "lib": "./lib"
