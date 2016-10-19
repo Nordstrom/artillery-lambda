@@ -1,7 +1,7 @@
 {
   "name": "artillery-lambda",
-  "version": "0.0.1",
-  "description": "Package to do load-tests with help of AWS Lambda",
+  "version": "0.0.2",
+  "description": "Artillery load test running with AWS Lambda",
   "main": "index.js",
   "author": {
     "name": "Jane Savina",
@@ -9,9 +9,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://git.nordstrom.net/scm/dwper/reserve-performance.git"
+    "url": "git+https://github.com/Nordstrom/artillery-lambda.git"
   },
-  "license": "proprietary",
+  "license": "MIT",
   "dependencies": {
     "artillery-core": "^1.8.2",
     "aws-sdk": "^2.3.16",
