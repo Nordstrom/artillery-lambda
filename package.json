@@ -1,5 +1,5 @@
 {
-  "name": "reserve-performance",
+  "name": "artillery-lambda",
   "version": "0.0.1",
   "description": "Package to do load-tests with help of AWS Lambda",
   "main": "index.js",
