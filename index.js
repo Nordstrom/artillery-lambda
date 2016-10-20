@@ -61,7 +61,7 @@ function runScenarios(options) {
         return new Promise(function (resolve, reject) {
             function _success(data) {
                 logger.debug('Lambda successfully executed.');
-                resolve({
+                return resolve({
                     name: scenario.name,
                     data: data
                 });
@@ -79,6 +79,18 @@ function runScenarios(options) {
                     console.log('error happened when calling Lambda!');
                     return _failure(err);
                 }
+
+                if (options.reportName) {
+                    return s3.putObjectAsync({
+                            Bucket: options.s3Bucket,
+                            Key: options.s3Path + options.reportName + '-' + Date.now() + '.json',
+                            Body: data
+                        })
+                        .then(function() {
+                            return _success(data);
+                        })
+                }
+
                 return _success(data);
             }
 
