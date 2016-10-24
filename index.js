@@ -113,9 +113,7 @@ function runScenarios(options) {
         })
         .then(function (results) {
             logger.debug('runScenarios is done:', results);
-            return {
-                artillery: results
-            };
+            return results;
         });
 }
 
@@ -147,7 +145,8 @@ function run(options) {
         return promise(options);
     })
         .then(function (results) {
-            return results[1].artillery;
+            // return only artillery run results, skip data about deploying and removing stack
+            return options.localRun ? results[0] : results[1];
         });
 }
 
