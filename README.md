@@ -1,3 +1,5 @@
+# DEPRECATED: This has been deprecated in favor of [Serverless Artillery](https://github.com/Nordstrom/serverless-artillery)
+
 # Artillery-Lambda
 Deploys AWS Cloud Formation stack with Lambda function. Function code calls artillery runner (http://artillery.io) to execute performance scenarios.
 
